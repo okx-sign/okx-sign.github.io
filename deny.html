@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>等待管理员审核</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      font-family: "Roboto", "PingFang SC", "Microsoft YaHei", -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #202124;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 11vh 24px 40px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 56px;
+    }
+
+    .content {
+      max-width: 360px;
+      flex-shrink: 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 26px;
+    }
+
+    .brand-name {
+      font-size: 21px;
+      font-weight: 400;
+      color: #5f6368;
+      letter-spacing: 0.1px;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.3;
+      color: #3c4043;
+      letter-spacing: -0.2px;
+    }
+
+    .illustration {
+      flex-shrink: 0;
+      width: 296px;
+      max-width: 36vw;
+    }
+
+    .illustration svg { width: 100%; height: auto; display: block; }
+
+    @media (max-width: 720px) {
+      .container { flex-direction: column-reverse; gap: 36px; }
+      .content { max-width: 100%; text-align: center; }
+      .brand { justify-content: center; }
+      .title { font-size: 26px; }
+      .illustration { width: 240px; max-width: 64vw; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="content">
+      <div class="brand">
+        <!-- Google 文档 logo -->
+        <svg width="26" height="35" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18.75 0H3A3 3 0 0 0 0 3v34a3 3 0 0 0 3 3h24a3 3 0 0 0 3-3V11.25L18.75 0Z" fill="#4285F4"/>
+          <path d="M18.75 0 30 11.25h-8.25a3 3 0 0 1-3-3V0Z" fill="#A1C2FA"/>
+          <rect x="7" y="19" width="16" height="2.1" rx="1.05" fill="#fff"/>
+          <rect x="7" y="24" width="16" height="2.1" rx="1.05" fill="#fff"/>
+          <rect x="7" y="29" width="11" height="2.1" rx="1.05" fill="#fff"/>
+        </svg>
+        <span class="brand-name">Google 文档</span>
+      </div>
+
+      <h1 class="title">等待管理员审核</h1>
+    </section>
+
+    <section class="illustration" aria-hidden="true">
+      <!-- Google 风格的“锁”插图（SVG 重绘） -->
+      <svg viewBox="0 0 320 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- 左上 绿色圆点 -->
+        <circle cx="42" cy="52" r="17" fill="#cce8d6"/>
+
+        <!-- 背景细线方框 -->
+        <rect x="125" y="38" width="112" height="112" rx="2"
+              transform="rotate(-3 181 94)"
+              stroke="#1f1f1f" stroke-width="1.6" fill="none"/>
+
+        <!-- 缠绕的细线椭圆 -->
+        <g stroke="#1f1f1f" stroke-width="1.6" fill="none">
+          <ellipse cx="172" cy="150" rx="108" ry="60" transform="rotate(-32 172 150)"/>
+          <ellipse cx="168" cy="152" rx="102" ry="56" transform="rotate(33 168 152)"/>
+        </g>
+
+        <!-- 锁所在平面的边缘 -->
+        <path d="M150 232 L255 232 L292 203" stroke="#1f1f1f" stroke-width="1.6"
+              stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+
+        <!-- 挂锁 -->
+        <g>
+          <!-- 锁环 -->
+          <path d="M178 176 v-16 a20 20 0 0 1 40 0 v16"
+                fill="none" stroke="#1f1f1f" stroke-width="7" stroke-linecap="round"/>
+          <!-- 锁身 -->
+          <rect x="164" y="176" width="68" height="56" rx="9"
+                fill="#aecbfa" stroke="#1f1f1f" stroke-width="2.2"/>
+          <!-- 锁孔 -->
+          <circle cx="198" cy="198" r="7" fill="#1f1f1f"/>
+          <path d="M198 203 l-4 18 h8 Z" fill="#1f1f1f"/>
+        </g>
+
+        <!-- 右下 黄色圆角方块 -->
+        <rect x="236" y="206" width="46" height="46" rx="10"
+              transform="rotate(22 259 229)" fill="#fde293"/>
+      </svg>
+    </section>
+  </main>
+</body>
+</html>
